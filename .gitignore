@@ -1,0 +1,30 @@
+# Whitelist: code only (no manuscript, data, results, environments)
+/*
+!/.gitignore
+!/pyproject.toml
+!/README.md
+!/LICENSE
+!/src/
+!/eval/
+!/tests/
+/eval/results/**
+!/eval/results/**/
+!/eval/results/**/*.sh
+__pycache__/
+*.pyc
+*.pt
+*.npz
+*.pkl
+*.h5ad
+*.csv
+*.log
+
+# session orchestration scripts (machine-specific)
+/eval/bench/x12_c2_chain.sh
+/eval/bench/x13_c3_chain.sh
+/eval/bench/x16b_c2_after_c3.sh
+/eval/results/bench/grnpfn/chain_p4.sh
+/eval/results/bench/grnpfn/chain_p4b.sh
+/eval/results/bench/grnpfn/chain_p4c.sh
+/eval/results/bench/grnpfn/chain_p4d.sh
+/eval/results/bench/grnpfn/chain_p4e.sh
